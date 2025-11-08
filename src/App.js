@@ -26,33 +26,41 @@ const CisseWebsite = () => {
       {/* Hero Section with Side Navigation */}
       <section className="hero-section">
         {/* Mobile Menu Toggle */}
-        <button 
+        <button
           className="mobile-menu-toggle"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        ><span className="menu-icon">
-  {mobileMenuOpen ? "×" : "☰"}
-</span>
-
+        >
+          <span className="menu-icon">{mobileMenuOpen ? "×" : "☰"}</span>
         </button>
 
         {/* Left Navigation Panel */}
-        <div className={`left-nav-panel ${mobileMenuOpen ? 'mobile-open' : ''}`}>
+        <div
+          className={`left-nav-panel ${mobileMenuOpen ? "mobile-open" : ""}`}
+        >
           <div className="logo">
             <h1>Cissé</h1>
           </div>
           <nav className="main-nav">
             <ul>
               <li>
-                <a href="#accueil" onClick={() => setMobileMenuOpen(false)}>▸ MA COMMUNE</a>
+                <a href="#accueil" onClick={() => setMobileMenuOpen(false)}>
+                  ▸ MA COMMUNE
+                </a>
               </li>
               <li>
-                <a href="#locations" onClick={() => setMobileMenuOpen(false)}>▸ MON QUOTIDIEN</a>
+                <a href="#locations" onClick={() => setMobileMenuOpen(false)}>
+                  ▸ MON QUOTIDIEN
+                </a>
               </li>
               <li>
-                <a href="#loisirs" onClick={() => setMobileMenuOpen(false)}>▸ MES LOISIRS</a>
+                <a href="#loisirs" onClick={() => setMobileMenuOpen(false)}>
+                  ▸ MES LOISIRS
+                </a>
               </li>
               <li>
-                <a href="#ephemerides" onClick={() => setMobileMenuOpen(false)}>▸ MES DÉMARCHES</a>
+                <a href="#ephemerides" onClick={() => setMobileMenuOpen(false)}>
+                  ▸ MES DÉMARCHES
+                </a>
               </li>
             </ul>
           </nav>
@@ -269,7 +277,7 @@ const CisseWebsite = () => {
             <button className="btn-outline">AGENDA</button>
           </div>
         </div>
-        
+
         <div className="fil-info">
           <div className="fil-info-content">
             <div className="fil-info-icon">📄 FIL INFO</div>
@@ -412,8 +420,6 @@ const CisseWebsite = () => {
           </div>
         </div>
       </footer>
-
-
     </div>
   );
 };
